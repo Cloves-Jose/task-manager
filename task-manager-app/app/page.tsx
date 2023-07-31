@@ -1,12 +1,17 @@
-import Image from 'next/image'
-import App from './main'
-import MenuSidebar from './components/sidebar/sidebar'
+"use client"
+import { Metadata } from "next";
+import { Container } from "react-bootstrap";
+import MenuSidebar from "../src/components/sidebar/sidebar";
 
+export const metadata: Metadata = {
+  title: 'Next.js'
+}
 
-export default function Home() {
+export default function Page() {
   return (
-    <div>
+    <Container style={{ display: "flex" }}>
       <MenuSidebar/>
-    </div>
+      <div>Dashboard do cliente</div>
+    </Container>
   )
 }
