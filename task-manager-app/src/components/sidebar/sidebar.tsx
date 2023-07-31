@@ -16,8 +16,8 @@ export default function MenuSidebar(){
     return (
         <Sidebar 
             className="menu-item"
-            style={{ height: "100vh", padding: "0px", margin: "0px" }} 
-            collapsed={collapsed} 
+            style={{ height: "100vh", padding: "0px", margin: "0px", marginRight: "15px" }} 
+            collapsed={false} 
             collapsedWidth="55px"
             rootStyles={{
                 [`.${sidebarClasses.container}`]: {
